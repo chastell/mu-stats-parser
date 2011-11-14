@@ -1,5 +1,5 @@
 module MUStatsParser class Executable
-  def initialize args
+  def initialize args = ARGV
     @from, @to = *args
   end
 
