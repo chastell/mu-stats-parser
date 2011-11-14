@@ -1,11 +1,11 @@
-require_relative 'spec_helper'
+require_relative '../spec_helper'
 
-describe MUStatsParser do
-  let(:musp) { MUStatsParser.new 'spec/fixtures/log' }
+module MUStatsParser describe Parser do
+  let(:parser) { MUStatsParser::Parser.new 'spec/fixtures/log' }
 
   describe '#stats' do
     it 'yeilds subsequent stats' do
-      musp.stats.first.must_equal({
+      parser.stats.first.must_equal({
         geoip: {
           city:      'Warsaw',
           continent: 'EU',
@@ -27,7 +27,7 @@ describe MUStatsParser do
   describe '#marshal_into' do
     it 'parses the log and saves it in the given PStore' do
       file = Tempfile.new ''
-      musp.marshal_into file.path
+      parser.marshal_into file.path
       File.read(file.path).must_equal File.read 'spec/fixtures/log.pstore'
     end
   end
@@ -35,8 +35,8 @@ describe MUStatsParser do
   describe '#yaml_into' do
     it 'parses the log and saves it in the given YAML::Store' do
       file = Tempfile.new ''
-      musp.yaml_into file.path
+      parser.yaml_into file.path
       File.read(file.path).must_equal File.read 'spec/fixtures/log.yml'
     end
   end
-end
+end end
