@@ -1,0 +1,54 @@
+---
+stats:
+- :geoip:
+    :city: Warsaw
+    :continent: EU
+    :country: Poland
+    :latitude: 52.25
+    :longitude: 21.0
+    :timezone: Europe/Warsaw
+  :ip: bc785ac340dc4855b72220038eea4baefbc982b2
+  :method: :get
+  :referrer: http://university.rubymendicant.com/
+  :request: /dashboard
+  :status: 200
+  :time: 2011-11-14 17:19:34.000000000 +01:00
+- :geoip:
+    :city: Warsaw
+    :continent: EU
+    :country: Poland
+    :latitude: 52.25
+    :longitude: 21.0
+    :timezone: Europe/Warsaw
+  :ip: bc785ac340dc4855b72220038eea4baefbc982b2
+  :method: :get
+  :referrer: http://university.rubymendicant.com/dashboard
+  :request: /stylesheets/buttons.css?1300219444
+  :status: 304
+  :time: 2011-11-14 17:19:34.000000000 +01:00
+- :geoip:
+    :city: Fort Lauderdale
+    :continent: NA
+    :country: United States
+    :latitude: 26.120900000000006
+    :longitude: -80.1273
+    :timezone: America/New_York
+  :ip: 982c38cd4097df6b2a407dcbbd23ffadd299672a
+  :method: :get
+  :referrer: http://university.rubymendicant.com/courses/22/assignments/63
+  :request: /stylesheets/compiled/print.css
+  :status: 200
+  :time: 2011-11-14 17:21:32.000000000 +01:00
+- :geoip:
+    :city: Fort Lauderdale
+    :continent: NA
+    :country: United States
+    :latitude: 26.120900000000006
+    :longitude: -80.1273
+    :timezone: America/New_York
+  :ip: 982c38cd4097df6b2a407dcbbd23ffadd299672a
+  :method: :get
+  :referrer: http://university.rubymendicant.com/courses/22/assignments/63
+  :request: /stylesheets/buttons.css?1300219444
+  :status: 304
+  :time: 2011-11-14 17:21:32.000000000 +01:00

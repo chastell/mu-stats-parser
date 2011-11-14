@@ -1,5 +1,6 @@
 require 'digest/sha1'
 require 'time'
+require 'yaml/store'
 
 require 'apachelogregex'
 require 'geoip'
@@ -35,6 +36,14 @@ class MUStatsParser
           time:     Time.strptime(parsed['%t'], '[%d/%b/%Y:%H:%M:%S %Z]'),
         })
       end
+    end
+  end
+
+  def yaml_into path
+    store = YAML::Store.new path
+    store.transaction do
+      store['stats'] ||= []
+      stats.each { |stat| store['stats'] << stat }
     end
   end
 end
