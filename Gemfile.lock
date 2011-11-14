@@ -1,0 +1,14 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    apachelogregex (0.1.0)
+    geoip (1.1.1)
+    minitest (2.8.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  apachelogregex
+  geoip
+  minitest (>= 2.3)

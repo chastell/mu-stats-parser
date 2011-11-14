@@ -1,0 +1,4 @@
+188.33.152.168 - - [14/Nov/2011:11:19:34 -0500] "GET /dashboard HTTP/1.1" 200 3360 "http://university.rubymendicant.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:7.0.1) Gecko/20100101 Firefox/7.0.1"
+188.33.152.168 - - [14/Nov/2011:11:19:34 -0500] "GET /stylesheets/buttons.css?1300219444 HTTP/1.1" 304 0 "http://university.rubymendicant.com/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:7.0.1) Gecko/20100101 Firefox/7.0.1"
+65.111.164.52 - - [14/Nov/2011:11:21:32 -0500] "GET /stylesheets/compiled/print.css HTTP/1.1" 200 207 "http://university.rubymendicant.com/courses/22/assignments/63" "Mozilla/5.0 (X11; Linux x86_64; rv:7.0.1) Gecko/20100101 Firefox/7.0.1"
+65.111.164.52 - - [14/Nov/2011:11:21:32 -0500] "GET /stylesheets/buttons.css?1300219444 HTTP/1.1" 304 0 "http://university.rubymendicant.com/courses/22/assignments/63" "Mozilla/5.0 (X11; Linux x86_64; rv:7.0.1) Gecko/20100101 Firefox/7.0.1"
