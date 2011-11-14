@@ -33,15 +33,17 @@ module MUStatsParser class Parser
   end
 
   def marshal_into path
-    store = PStore.new path
-    store.transaction do
-      store['stats'] ||= []
-      stats.each { |stat| store['stats'] << stat }
-    end
+    persist path, PStore
   end
 
   def yaml_into path
-    store = YAML::Store.new path
+    persist path, YAML::Store
+  end
+
+  private
+
+  def persist path, storage
+    store = storage.new path
     store.transaction do
       store['stats'] ||= []
       stats.each { |stat| store['stats'] << stat }
