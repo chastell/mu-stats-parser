@@ -6,4 +6,5 @@ require 'yaml/store'
 require 'apachelogregex'
 require 'geoip'
 
+require_relative './mu-stats-parser/executable'
 require_relative './mu-stats-parser/parser'
