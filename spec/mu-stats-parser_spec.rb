@@ -24,6 +24,14 @@ describe MUStatsParser do
     end
   end
 
+  describe '#marshal_into' do
+    it 'parses the log and saves it in the given PStore' do
+      file = Tempfile.new ''
+      musp.marshal_into file.path
+      File.read(file.path).must_equal File.read 'spec/fixtures/log.pstore'
+    end
+  end
+
   describe '#yaml_into' do
     it 'parses the log and saves it in the given YAML::Store' do
       file = Tempfile.new ''

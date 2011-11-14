@@ -1,4 +1,5 @@
 require 'digest/sha1'
+require 'pstore'
 require 'time'
 require 'yaml/store'
 
@@ -36,6 +37,14 @@ class MUStatsParser
           time:     Time.strptime(parsed['%t'], '[%d/%b/%Y:%H:%M:%S %Z]'),
         })
       end
+    end
+  end
+
+  def marshal_into path
+    store = PStore.new path
+    store.transaction do
+      store['stats'] ||= []
+      stats.each { |stat| store['stats'] << stat }
     end
   end
 
